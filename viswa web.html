@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exam Results Portal - DevOps Lifecycle</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f6f8;
+        display: flex;
+        justify-content: center;
+        padding: 40px;
+    }
+    .flowchart {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 1100px;
+    }
+    .stage {
+        background: white;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 15px;
+        width: 250px;
+        text-align: center;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        position: relative;
+    }
+    .stage h3 {
+        color: #2c3e50;
+        margin-bottom: 10px;
+    }
+    .stage p {
+        font-size: 14px;
+        color: #555;
+        text-align: left;
+    }
+    .arrow {
+        width: 40px;
+        height: 40px;
+        margin: auto;
+        border-top: 3px solid #2c3e50;
+        border-right: 3px solid #2c3e50;
+        transform: rotate(45deg);
+    }
+</style>
+</head>
+<body>
+
+<div class="flowchart">
+    <div class="stage">
+        <h3>Plan</h3>
+        <p>Define the portal requirements:
+           <br>• Hall ticket input box
+           <br>• Button to check results
+           <br>• Result display area with marks, grade, and status.</p>
+    </div>
+    <div class="arrow"></div>
+
+    <div class="stage">
+        <h3>Code</h3>
+        <p>HTML creates the structure:
+           <br>• &lt;input&gt; for hall ticket
+           <br>• &lt;button&gt; to trigger checkResult()
+           <br>• CSS styles for clean UI
+           <br>• JavaScript for logic.</p>
+    </div>
+    <div class="arrow"></div>
+
+    <div class="stage">
+        <h3>Build</h3>
+        <p>JavaScript creates the <code>studentData</code> object:
+           <br>• Keys = Hall Ticket numbers
+           <br>• Values = Student name, subjects, marks, pass/fail status.</p>
+    </div>
+    <div class="arrow"></div>
+
+    <div class="stage">
+        <h3>Test</h3>
+        <p>checkResult() checks:
+           <br>• Empty hall ticket alert
+           <br>• Valid ticket lookup in studentData
+           <br>• Correct grade calculation from percentage.</p>
+    </div>
+    <div class="arrow"></div>
+
+    <div class="stage">
+        <h3>Release</h3>
+        <p>Result Box displays:
+           <br>• Name
+           <br>• Subject-wise marks table
+           <br>• Total marks, percentage, grade
+           <br>• Pass/Fail status.</p>
+    </div>
+    <div class="arrow"></div>
+
+    <div class="stage">
+        <h3>Deploy</h3>
+        <p>JavaScript event listener enables Enter key to trigger results without clicking the button.</p>
+    </div>
+    <div class="arrow"></div>
+
+    <div class="stage">
+        <h3>Operate</h3>
+        <p>Portal in use:
+           <br>• Students enter hall ticket
+           <br>• View instant results with marks and status.</p>
+    </div>
+    <div class="arrow"></div>
+
+    <div class="stage">
+        <h3>Monitor</h3>
+        <p>Plan improvements:
+           <br>• Integrate live database
+           <br>• Secure input validation
+           <br>• Add printing/downloading option.</p>
+    </div>
+</div>
+
+</body>
+</html>
